@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selectors</title>
+    <style>
+       h1{
+           background-color: blueviolet;
+           color: burlywood;
+           font-weight: bold;
+           text-align: center;
+       }
+       /* if p is contained by any li which is contained by div */
+       /* div p{
+           color: #fffafb;
+           background-color: darkgoldenrod;
+           font-weight: bold;
+       }*/
+       /* if p is write inside div then this css will be applied */
+        /* div > p{
+           color: indianred;
+           background-color: khaki;
+           font-weight: bold;
+       } */
+       /* if p is write after div i.e p is the next sibling of div */
+       div+p{
+           color: white;
+           background-color: hotpink;
+       }
+    </style>
+</head>
+<body>
+    <h1>this is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>this is another paragraph inside li</p></li>
+                <li>this will not get affected</li>
+                <p>this is a para inside ul</p>
+            </ul>
+            <p>this is paragraph</p>
+        </div>
+        <p>this is another paragraph</p>
+    </div>
+    <p>this is outermost paragraph</p>
+</body>
+</html>

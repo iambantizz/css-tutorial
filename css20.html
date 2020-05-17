@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and Text shadow</title>
+    <style>
+       .container{
+           display: flex;
+       }
+       .card{
+           padding: 20px 12px;
+           margin: 20px 12px;
+           /* border: 2px solid red; */
+           background-color: salmon;
+           /* box-shadow: 5px 6px brown; ( box-shadow for offset lower side border) */
+           /* box-shadow: -5px -6px brown;( box-shadow for offset upper side border) */
+           /* box-shadow: -5px -6px 30px green;(box-shadow for offset blur the border) */
+           /* box-shadow: -5px -6px 30px 20px green; */
+           /*box-shadow for offset spread-radius the border */
+           box-shadow: inset 3px 5px blueviolet;
+           box-shadow: 3px 5px 10px 8px blueviolet, 4px 6px 10px 12px red;
+       }
+       .card h2{
+           text-shadow: 1px 1px 1px  yellowgreen;
+           /* text-shadow: -1px -1px -1px  yellowgreen; */
+       }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2> card1</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat quia architecto quo itaque nulla laboriosam praesentium dicta eius officia ipsam sint, qui eligendi perspiciatis asperiores culpa optio numquam dolorem corrupti eaque aspernatur neque nobis?</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2> card2</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae nostrum velit ad iusto quidem at quibusdam eveniet sed doloribus itaque voluptatem, nisi dolores veniam aut nobis ullam id magni, sunt debitis amet voluptatum possimus.</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2> card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ex adipisci unde explicabo libero tempora, at impedit saepe recusandae maxime sed atque quaerat nisi quasi beatae sunt dolorum. Velit nesciunt adipisci dolor quam consectetur.</p>
+        </div>
+    </div>
+</body>
+
+</html>
