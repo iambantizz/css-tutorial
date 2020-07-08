@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid + media queries</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            
+        }
+        @media only screen and(max-width: 300px){
+            body{
+                background-color: greenyellow;
+            }
+        }
+        @media only screen and (min-width: 300px)and(max-width: 500px){
+            body{
+                background-color: indianred;
+            }
+        }
+        @media (min-width:500px)and(max-width:800px){
+            body{
+                background-color: orchid;
+            }
+        }
+        @media (min-width: 800px){
+            body{
+                background-color: palegreen;
+            }
+        }
+        .bdr{
+            border: 2px solid palevioletred;
+            padding: 10px 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="bdr">
+            home about contact
+        </nav>
+        <section class="bdr">
+            <h2>this is computer</h2>
+        </section>
+        <aside class="bdr">
+            <h1>more about us</h1>
+        </aside>
+    </div>
+</body>
+</html>

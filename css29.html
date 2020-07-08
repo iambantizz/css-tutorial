@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid</title>
+    <style>
+       .container{
+          display: grid;
+          grid-gap: 1rem;
+          grid-template-areas: 
+          'navbar navbar navbar navbar '
+          'section section section aside'
+          'footer footer footer footer';
+          
+       }
+       .item{
+          background-color: cadetblue;
+          border: 2px solid goldenrod;
+       }
+       #navbar{
+           grid-area: navbar;
+       }
+       #section{
+           grid-area: section;
+       }
+       #aside{
+           grid-area: aside;
+       }
+       footer{
+           grid-area: footer;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="item">home about us</div>
+        <div id="section" class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, at quos. Autem, libero? Similique rerum veniam natus maiores corporis vero, modi odit Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque blanditiis, in quas, ex ratione ipsum repellat est dolores aliquid nam totam repudiandae, molestias dolorum magnam. Minima cupiditate non placeat mollitia consequatur vero dolore facere deserunt quod perferendis adipisci omnis harum cum modi officia, laborum quas maxime numquam! Nihil quibusdam iste laudantium aliquam vero labore numquam nisi ea. Architecto, quo. Explicabo hic nostrum suscipit repellendus magnam? Distinctio, voluptatem? Dolore illo nihil, eum ipsum excepturi provident velit beatae necessitatibus maxime vitae repellendus deleniti optio expedita suscipit accusantium tenetur quia fugit rerum est?</div>
+        <div id="aside" class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi magni dolor porro Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima maiores consequatur ipsa quidem aspernatur. Molestias sequi placeat at cum! Accusantium praesentium ipsa reprehenderit vitae facilis quod incidunt aspernatur perferendis temporibus sunt molestiae ipsum sint aliquam explicabo, hic repudiandae necessitatibus. Exercitationem totam fugit excepturi ipsam beatae neque amet, natus eligendi consequuntur. Impedit ducimus beatae, delectus modi accusamus magnam vero facilis velit.</div>
+        <footer class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo necessitatibus nostrum praesentium!</footer>
+        <!-- <div class="box">This is box-1</div>
+        <div class="box">This is box-2</div>
+        <div class="box">This is box-3</div>
+        <div class="box">This is box-4</div>
+        <div class="box">This is box-5</div>
+        <div class="box">This is box-6</div>
+        <div class="box">This is box-7</div>
+        <div class="box">This is box-8</div>
+        <div class="box">This is box-9</div>
+        <div class="box">This is box-10</div>
+        <div class="box">This is box-11</div>
+        <div class="box">This is box-12</div> -->
+    </div>
+</body>
+</html>
